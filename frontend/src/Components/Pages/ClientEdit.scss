@@ -1,0 +1,111 @@
+@import "../../SassConfig/mixin.scss";
+
+// .edit-client-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 20px;
+// }
+
+// .back-link {
+//   margin-bottom: 10px;
+// }
+
+// .client-form {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+//   width: 300px;
+// }
+
+// .client-form label {
+//   font-weight: bold;
+// }
+
+// .client-form input {
+//   padding: 8px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+// }
+
+// .submit-button {
+//   background-color: #007bff;
+//   color: white;
+//   padding: 10px;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }
+
+// .submit-button:hover {
+//   background-color: #0056b3;
+// }
+
+.edit-client-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+  margin-bottom: 10px;
+
+  a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.client-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: #0056b3;
+    }
+  }
+}

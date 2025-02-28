@@ -1,0 +1,36 @@
+@import "../../SassConfig/mixin.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(8, 59, 107);
+
+  @include md {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: rgb(8, 59, 107);
+  }
+
+  .link {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+
+    @include md {
+      font-size: 1.3rem;
+    }
+  }
+}

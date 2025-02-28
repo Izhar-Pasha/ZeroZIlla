@@ -1,0 +1,63 @@
+@import "../../SassConfig//mixin.scss";
+
+#manage {
+  margin: 5px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+  gap: 30px;
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+.agencies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.agency-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    i {
+      cursor: pointer;
+      margin-right: 10px;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+}
