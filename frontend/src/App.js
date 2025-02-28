@@ -13,17 +13,17 @@ import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        {/* <Route path element={<Navbar />}> */}
-        <Route path="/Agencies" element={<Agency />} />
-        <Route path="/Clients" element={<Client />} />
-        <Route path="/Agencies/Create" element={<CreateAgencyForm />} />
-        <Route path="/Clients/:clientId" element={<ClientEdit />} />
-        <Route path="/top-clients" element={<TopClient />} />
-        {/* </Route> */}
+        <Route element={<Navbar />}>
+          <Route path="/Agencies" element={<Agency />} />
+          <Route path="/Clients" element={<Client />} />
+          <Route path="/Agencies/Create" element={<CreateAgencyForm />} />
+          <Route path="/Clients/:clientId" element={<ClientEdit />} />
+          <Route path="/top-clients" element={<TopClient />} />
+        </Route>
       </Routes>
       <ToastContainer />
     </Router>

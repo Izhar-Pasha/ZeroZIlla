@@ -11,7 +11,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/login");
+    navigate("/");
   };
 
   const handleSubmit = async (e) => {
