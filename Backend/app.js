@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import dbConnection from "./connections/connectMongo.js";
 import authRoutes from "./routes/AuthRouter.js";
-import agencyRoutes from "./routes/routes.js";
+import agencyRoutes from "./routes/Routes.js";
 
 dotenv.config({ path: "./env" });
 
